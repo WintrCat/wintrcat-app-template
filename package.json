@@ -1,0 +1,17 @@
+{
+  "name": "croissant-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "react-router dev",
+    "build": "react-router build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "AGPL-3.0-only",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "@react-router/dev": "^7.13.0"
+  }
+}
