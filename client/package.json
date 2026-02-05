@@ -1,0 +1,26 @@
+{
+  "name": "client",
+  "type": "module",
+  "scripts": {
+    "dev": "react-router dev",
+    "build": "react-router build",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "@react-router/dev": "^7.13.0",
+    "@types/express": "^5.0.6",
+    "@types/react": "^19.2.11",
+    "dotenv": "^17.2.3",
+    "vite": "^7.3.1",
+    "vite-tsconfig-paths": "^6.0.5"
+  },
+  "dependencies": {
+    "@react-router/express": "^7.13.0",
+    "@react-router/node": "^7.13.0",
+    "express": "^5.2.1",
+    "isbot": "^5",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router": "^7.13.0"
+  }
+}

@@ -1,3 +1,4 @@
-node_modules
-build
-.react-router
+**/node_modules
+**/build
+client/.react-router
+.env
