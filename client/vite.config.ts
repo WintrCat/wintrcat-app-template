@@ -6,18 +6,10 @@ import dotenv from "dotenv";
 dotenv.config({ path: "../.env", quiet: true });
 
 const port = Number(
-    new URL(process.env.FRONTEND_ORIGIN || "").port
+    new URL(process.env.DEV_ORIGIN || "").port
 ) || 3000;
 
 export default defineConfig({
     plugins: [reactRouter(), tsConfigPaths()],
-    server: {
-        port: port,
-        proxy: {
-            "/api": {
-                changeOrigin: true,
-                target: process.env.BACKEND_ORIGIN
-            }
-        }
-    }
+    server: { port }
 });

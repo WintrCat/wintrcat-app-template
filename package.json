@@ -1,6 +1,8 @@
 {
 	"scripts": {
-		"build": "pnpm -F client build && pnpm -F server build"
+		"dev": "pnpm -F client dev",
+		"build": "pnpm -F client build && pnpm -F server build",
+		"start": "pnpm -F server start"
 	},
 	"devDependencies": {
 		"typescript": "^5.9.3"
