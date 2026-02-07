@@ -14,7 +14,8 @@ this is mostly just for me but do whatever you want
 ### Usage
 
 `git clone https://github.com/wintrcat/wintrcat-app-template .`<br>
-`rm -r .git`
+`rm -r .git` *or delete the `.git` folder manually*<br>
+`pnpm install`
 
 #### Scripts
 
