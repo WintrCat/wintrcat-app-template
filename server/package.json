@@ -4,7 +4,7 @@
     "scripts": {
         "build": "tsc && tsc-alias -f",
         "start": "node build/index.js",
-        "dev": "tsc && node build/index.js"
+        "dev": "pnpm build && pnpm start"
     },
     "dependencies": {
         "@react-router/express": "^7.13.0",
