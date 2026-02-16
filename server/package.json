@@ -2,7 +2,7 @@
     "name": "server",
     "type": "module",
     "scripts": {
-        "build": "tsc",
+        "build": "tsc && tsc-alias -f",
         "start": "node build/index.js",
         "dev": "tsc && node build/index.js"
     },
@@ -12,6 +12,7 @@
         "express": "^5.2.1"
     },
     "devDependencies": {
-        "@types/express": "^5.0.6"
+        "@types/express": "^5.0.6",
+        "tsc-alias": "^1.8.16"
     }
 }
