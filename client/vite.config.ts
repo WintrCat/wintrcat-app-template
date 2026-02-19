@@ -5,11 +5,11 @@ import dotenv from "dotenv";
 
 dotenv.config({ path: "../.env", quiet: true });
 
-const port = Number(
-    new URL(process.env.DEV_ORIGIN || "").port
-) || 3000;
+const devOrigin = process.env.DEV_ORIGIN || "http://localhost:3000";
 
 export default defineConfig({
     plugins: [reactRouter(), tsConfigPaths()],
-    server: { port }
+    server: {
+        port: Number(new URL(devOrigin).port) || 3000
+    }
 });

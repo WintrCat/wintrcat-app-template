@@ -1,4 +1,10 @@
-import { Outlet, Scripts, ScrollRestoration } from "react-router";
+import {
+    Outlet,
+    Scripts,
+    ScrollRestoration,
+    Meta,
+    Links
+} from "react-router";
 
 function App() {
     return <html>
@@ -6,6 +12,9 @@ function App() {
             <title>The Best App</title>
 
             <link rel="icon" href="/favicon.ico"/>
+
+            <Meta/>
+            <Links/>
         </head>
 
         <body>

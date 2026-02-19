@@ -28,5 +28,5 @@ this is mostly just for me but do whatever you want
 Stored in `.env` in the root directory:
 
 - `ORIGIN` - origin for production server e.g. `http://localhost:8080`
-- `DEV_ORIGIN` - origin for dev server e.g. `http://localhost:3000`
+- `DEV_ORIGIN` *(optional)* - origin for dev server; defaults to `http://localhost:3000`
 - `THREADS` *(optional)* - number of threads to run server on. defaults to number of available cores
