@@ -1,7 +1,7 @@
 {
 	"scripts": {
 		"dev": "pnpm -F client dev",
-		"build": "pnpm -F client build && pnpm -F server build",
+		"build": "pnpm -F * build",
 		"start": "pnpm -F server start"
 	},
 	"devDependencies": {
