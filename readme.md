@@ -29,4 +29,4 @@ Stored in `.env` in the root directory:
 
 - `ORIGIN` - origin for production server e.g. `http://localhost:8080`
 - `DEV_ORIGIN` *(optional)* - origin for dev server; defaults to `http://localhost:3000`
-- `THREADS` *(optional)* - number of threads to run server on. defaults to number of available cores
+- `THREADS` *(optional)* - number of threads to run server on. defaults to 1

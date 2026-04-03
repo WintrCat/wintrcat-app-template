@@ -2,12 +2,11 @@ import express from "express";
 import { createRequestHandler } from "@react-router/express";
 import dotenv from "dotenv";
 import cluster from "cluster";
-import { cpus } from "os";
 
 dotenv.config({ path: "../.env", quiet: true });
 
 const port = new URL(process.env.ORIGIN || "").port || 8080;
-const threads = Number(process.env.THREADS) || cpus().length;
+const threads = Number(process.env.THREADS) || 1;
 
 async function main() {
     if (cluster.isPrimary) {
